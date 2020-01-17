@@ -45,3 +45,15 @@ document.getElementById("hartje").onclick = function () {
 };
 
 
+
+document.getElementById("start").onclick = function on(){
+  document.getElementById("menu-overlay").style.display = "block";
+}
+
+
+
+document.getElementById("menu-overlay").onclick = function off(){
+    document.getElementById("menu-overlay").style.display = "none";
+}
+
+

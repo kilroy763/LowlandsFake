@@ -13,26 +13,26 @@ header {
     padding: 1em 0em;
     background-color: #0827cc;
     box-shadow: inset 0 0 2em #000000;
-
 }
 
 #test {
     display: block;
     text-align: center;
 }
+
 #test:hover{
     color: #4cd066;
 }
-.navkopjes1 a,
-a,
-a {
+
+.navkopjes1 li, a {
     font-size: 12px;
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
-    padding: 0 15px;
+    padding: 0 10px;
 }
+
 
 label,
 i {
@@ -44,23 +44,21 @@ i {
 
 }
 
-.navkopjesmobiel {
+.navkopjes1 {
     white-space: nowrap;
     overflow-x: auto;
     height: 50px;
 }
 
-.navkopjesmobiel li {
+.navkopjes1 li {
     display: inline-block;
     float: none;
 }
 
 
-.nav1 {
-    display: none;
-}
-
-
+    .nav1 {
+        display: block;
+    }
 
 
 
@@ -69,32 +67,6 @@ nav li a:hover {
 }
 
 
-
-ul li ul {
-
-    display: none;
-    background-color: #0827cc;
-    list-style: none;
-    padding: 10px 0px;
-}
-
-ul li:hover > ul {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    list-style: none;
-    padding: 10px;
-}
-
-ul li ul li {
-    clear: both;
-    list-style: none;
-    padding: 10px;
-    width 5em;
-}
-
-
-/*https://css-tricks.com/solved-with-css-dropdown-menus/*/
 
 
 .mainfoto {
@@ -148,47 +120,8 @@ ul li ul li {
     transform: rotate(180deg);
 }
 
-.artiesten, .news2 {
-    background-color: #4cd066;
-    width: 560px;
-    padding: 30px;
-    margin-left: 10px;
-    display: inline-block;
-}
 
-.newssectie{
-    display: inline-flex;
-    position:relative;
-}
 
-.news{
-    background-color: #4cd066;
-    width: 560px;
-    padding: 30px;
-    margin-left: 10px;
-    display: inline-block;
-}
-
-.news img{
-    width: 500px;
-    height: 280px;
-}
-.news q {
-        padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-}
-
-.artiesten img {
-    width: 500px;
-    height: 280px;
-}
-
-.artiesten q {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-}
 
 .rollen {
 
@@ -199,9 +132,7 @@ ul li ul li {
     margin-bottom: 20px;
 }
 
-    .newssectie {
-        margin-bottom: 1em;
-    }
+
 
 footer {
     padding: 10px 0px;
@@ -231,16 +162,8 @@ footer {
 
 
 
-section > article > a {
-    color:black;
-    font-size: 1em;
-}
 
-.newssectie{
-    display: block;
-    text-align: center;
-    
-}
+
 
 
 
@@ -314,112 +237,11 @@ label{
     margin-top: 2em;
 }
 
-@media screen and (max-width: 634px) {
-
-    .artiesten, .news {
-        width: 300px;
-
-    }
-    
-    .news {
-        margin-top: 1em;
-    }
-
-    .artiesten img, .news img {
-        width: 250px;
-        height: 140px;
-    }
-
-    .artiesten q {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-bottom: 10px;
-        font-size: 10px;
-    }
-
-    .artiesten h2, .news h2 {
-        font-size: 20px;
-        padding-bottom: 5px;
-    }
-    
-    .serieuzetekst{
-        width: 60%;
-    }
-    .blokje{
-        width: 95%;
-    }
-    
-    .fotogroot{
-        width: 80%;
-    }
+    section > article > a {
+    color:black;
+    font-size: 1em;
 }
 
-
-@media screen and (min-width: 400px) {
-    
-
-    
-    footer {
-    padding: 10px 0px;
-    background-color: #0827cc;
-    box-shadow: inset 0 0 20px #000000;
-    width: 100%;
-    height: 21em;
-    
-}
-    
-                .news {
-        margin-top: 1em;
-    }
-    
-    .email input{
-        display: block;
-        margin: 0 auto;
-    }
-
-    
-
-}
-
-
-@media screen and (min-width: 1000px) {
-
-    .navmobiel {
-        display: none;
-    }
-    
-        .email{
-        position: absolute;
-        right: 0px;
-    }
-            .news {
-        margin-top: 1em;
-    }
-        footer {
-    padding: 10px 0px;
-    background-color: #0827cc;
-    box-shadow: inset 0 0 20px #000000;
-    width: 100%;
-    height: 15em;
-    display: inline-flex;
-    
-}
-    .nav1 {
-        display: block;
-    }
-
-    .navkopjes1 {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-        margin: auto;
-    
-
-    }
-
-}
 
 .winnen{
     color: white;
@@ -470,4 +292,255 @@ iframe {
 input:focus, textarea:focus {
     color: white;
     background-color:blue;
+}
+
+
+
+
+
+
+    .artiesten, .news {
+        width: 300px;
+
+    }
+    
+    .news {
+        margin-top: 1em;
+    }
+
+    .artiesten img, .news img {
+        width: 250px;
+        height: 140px;
+    }
+
+    .artiesten q {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .artiesten h2, .news h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .serieuzetekst{
+        width: 60%;
+    }
+    .blokje{
+        width: 95%;
+    }
+    
+    .fotogroot{
+        width: 80%;
+    }
+
+    .artiesten, .news {
+    background-color: #4cd066;
+    padding: 10px;
+    display: inline-block;
+}
+.news{
+    background-color: #4cd066;
+    padding: 10px;
+    display: inline-block;
+}
+.newssectie{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    
+}
+.news q {
+        padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.artiesten q {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    font-size: 0.6em;
+}
+    
+    .artiesten, .news {
+    background-color: #4cd066;
+    padding: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 634px) {
+    
+    .artiesten, .news {
+    background-color: #4cd066;
+    width: 560px;
+    padding: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+    
+    .newssectie{
+    display: inline-flex;
+    position:relative;
+}
+
+.news{
+    background-color: #4cd066;
+    width: 560px;
+    padding: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.newssectie{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    
+}
+.news img{
+    width: 500px;
+    height: 280px;
+}
+
+
+.artiesten img {
+    width: 500px;
+    height: 280px;
+}
+.artiesten q {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    font-size: 1em;
+}
+
+
+
+
+         .newssectie {
+        margin-bottom: 1em;
+    }
+    
+    .artiesten h2 {
+        font-size: 1.5em;
+    }
+        footer {
+    padding: 10px 0px;
+    background-color: #0827cc;
+    box-shadow: inset 0 0 20px #000000;
+    width: 100%;
+    height: 21em;
+    
+}
+    
+                .news {
+        margin-top: 1em;
+    }
+    
+    .email input{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #menu-overlay li a{
+       font-size: 2em;
+}
+
+#menu-overlay li {
+    margin-top: 10em;
+}
+
+}
+
+/*
+@media screen and (min-width: 400px) {
+    
+
+    
+    footer {
+    padding: 10px 0px;
+    background-color: #0827cc;
+    box-shadow: inset 0 0 20px #000000;
+    width: 100%;
+    height: 21em;
+    
+}
+    
+                .news {
+        margin-top: 1em;
+    }
+    
+    .email input{
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+
+}
+
+*/
+
+
+#menu-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#menu-overlay li a{
+       font-size: 2em;
+    text-align: center;
+    display: block;
+}
+
+#menu-overlay li {
+    margin-top: 10em;
+        display: block;
+}
+
+
+@media screen and (min-width: 1050px) {
+
+    
+        .email{
+        position: absolute;
+        right: 0px;
+    }
+            .news {
+        margin-top: 1em;
+    }
+        footer {
+    padding: 10px 0px;
+    background-color: #0827cc;
+    box-shadow: inset 0 0 20px #000000;
+    width: 100%;
+    height: 15em;
+    display: inline-flex;
+    
+}
+
+    .navkopjes1 {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: auto;
+    
+
+    }
+
+   
 }
